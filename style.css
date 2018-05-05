@@ -13,7 +13,7 @@
 	background: linear-gradient(to right ,#24f4b9, #22b5e8);
 }
 
-a:link {
+a {
 	color: white;
 }
 
@@ -31,19 +31,19 @@ div {
 	display: inline;
 }
 
-.apple:hover {
+.apple:hover, .apple:visited, .apple:active {
 	color: #000;
 }
 
-.resistance:hover {
+.resistance:hover, .resistance:visited, .resistance:active {
 	color: #e45b0a;
 }
 
-.github:hover {
+.github:hover, .github:visited, .github:active {
 	color: #333;
 }
 
-.facebook:hover {
+.facebook:hover, .facebook:visited, .facebook:active {
 	color: #3B5998;
 }
 
@@ -56,7 +56,7 @@ div {
 	-webkit-background-clip: text;
 }
 
-.flickr:hover {
+.flickr:hover, .flickr:active {
 	color: transparent;
 	text-fill-color: transparent;
 	-ms-text-fill-color: transparent;
@@ -64,15 +64,15 @@ div {
 	-webkit-text-fill-color: transparent;
 }
 
-.lastfm:hover {
+.lastfm:hover, .lastfm:visited, .lastfm:active {
 	color: #d51007;
 }
 
-.telegram:hover {
+.telegram:hover, .telegram:visited, .telegram:active {
 	color: #0088cc;
 }
 
-.linkedin:hover {
+.linkedin:hover, .linkedin:visited, .linkedin:active {
 	color: #0077b5;
 }
 
@@ -85,7 +85,7 @@ div {
 	-webkit-background-clip: text;
 }
 
-.instagram:hover {
+.instagram:hover, .instagram:active {
 	color: transparent;
 	text-fill-color: transparent;
 	-ms-text-fill-color: transparent;
@@ -93,6 +93,6 @@ div {
 	-webkit-text-fill-color: transparent;
 }
 
-.snapchat:hover {
+.snapchat:hover, .snapchat:visited, .snapchat:active {
 	color: #fffc00;
 }
