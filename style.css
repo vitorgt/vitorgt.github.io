@@ -1,0 +1,98 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.fill {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #22b5e8;
+	background: linear-gradient(to right ,#24f4b9, #22b5e8);
+}
+
+a:link {
+	color: white;
+}
+
+h1 {
+	display: inline;
+	position: absolute;
+	width: 90%;
+	bottom: 55%;
+	left: 50%;
+	margin-left: -45%;
+	color: white;
+}
+
+div {
+	display: inline;
+}
+
+.apple:hover {
+	color: #000;
+}
+
+.resistance:hover {
+	color: #e45b0a;
+}
+
+.github:hover {
+	color: #333;
+}
+
+.facebook:hover {
+	color: #3B5998;
+}
+
+.flickr {
+	background: linear-gradient(to right, #0062dd, #ff0084);
+
+	background-clip: text;
+	-ms-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+}
+
+.flickr:hover {
+	color: transparent;
+	text-fill-color: transparent;
+	-ms-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent;
+}
+
+.lastfm:hover {
+	color: #d51007;
+}
+
+.telegram:hover {
+	color: #0088cc;
+}
+
+.linkedin:hover {
+	color: #0077b5;
+}
+
+.instagram {
+	background: linear-gradient(to bottom, #8134af, #f58529);
+
+	background-clip: text;
+	-ms-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+}
+
+.instagram:hover {
+	color: transparent;
+	text-fill-color: transparent;
+	-ms-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent;
+}
+
+.snapchat:hover {
+	color: #fffc00;
+}
