@@ -1,0 +1,257 @@
+html,
+html[theme="light"] {
+  --blue: #007bff;
+  --blueA: #007bff8f;
+  --green: #34c759;
+  --greenA: #34c7598f;
+  --indigo: #5856d6;
+  --indigoA: #5856d68f;
+  --orange: #ff9500;
+  --orangeA: #ff95008f;
+  --pink: #ff2d54;
+  --pinkA: #ff2d548f;
+  --purple: #af52de;
+  --purpleA: #af52de8f;
+  --red: #ff3b30;
+  --redA: #ff3b308f;
+  --teal: #5ac7fa;
+  --tealA: #5ac7fa8f;
+  --yellow: #ffcc00;
+  --yellowA: #ffcc008f;
+  --gray0: #000000;
+  --gray1: #8e8e93;
+  --gray2: #aeaeb2;
+  --gray3: #c7c7cc;
+  --gray4: #d1d1d6;
+  --gray5: #e5e5ea;
+  --gray6: #f2f2f7;
+  --gray7: #ffffff;
+  --transp: #ffffff00;
+}
+
+html[theme="dark"] {
+  --blue: #0a84ff;
+  --blueA: #0a84ff67;
+  --green: #30d158;
+  --greenA: #30d15867;
+  --indigo: #5e5ce6;
+  --indigoA: #5e5ce667;
+  --orange: #ff9d0a;
+  --orangeA: #ff9d0a67;
+  --pink: #ff375f;
+  --pinkA: #ff375f67;
+  --purple: #bf5af2;
+  --purpleA: #bf5af267;
+  --red: #ff453a;
+  --redA: #ff453a67;
+  --teal: #64d2ff;
+  --tealA: #64d2ff67;
+  --yellow: #ffd60a;
+  --yellowA: #ffd60a67;
+  --gray0: #ffffff;
+  --gray1: #8e8e93;
+  --gray2: #636366;
+  --gray3: #48484a;
+  --gray4: #3a3a3c;
+  --gray5: #2c2c2e;
+  --gray6: #1c1c1e;
+  --gray7: #000000;
+  --transp: #ffffff00;
+}
+
+html,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.8rem;
+  font-family: serif, monospace;
+}
+
+#sigg {
+  fill: var(--gray0);
+  z-index: 3;
+}
+
+body {
+  perspective: 1000px;
+  overflow: clip;
+}
+
+svg {
+  width: 10rem;
+  height: 5rem;
+  transition: all 0.3s ease-out;
+}
+
+main {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: linear-gradient(
+    to right bottom,
+    var(--gray7),
+    var(--gray4)
+  );
+  display: grid;
+  place-items: center;
+  position: fixed;
+  z-index: 0;
+}
+
+#glassholder {
+  min-height: 80vh;
+  width: 80vw;
+  display: grid;
+  place-items: center;
+  z-index: 2;
+}
+
+.glass {
+  transform-style: preserve-3d;
+  min-height: 60vh;
+  width: 60vw;
+  border-radius: 1rem;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  z-index: 2;
+  background: var(--purpleA);
+}
+
+::selection {
+  background: var(--purpleA);
+}
+
+.name {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  transition: all 0.3s ease-out;
+}
+
+h1,
+a,
+.socialholder {
+  opacity: 1;
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+  z-index: 3;
+  color: var(--gray0);
+}
+
+.social {
+  flex: 2;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.socialholder {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  align-content: center;
+
+  justify-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+a {
+  font-size: 1rem;
+  flex: 1 1 auto;
+  margin: 0.25rem;
+  justify-self: center;
+}
+
+button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 0.5rem;
+  border: none;
+  background-color: inherit;
+  color: var(--gray0);
+  z-index: 3;
+}
+
+/* Icon colors */
+html[theme="light"] .apple:hover,
+html[theme="light"] .apple:active {
+  color: #000000;
+}
+html[theme="dark"] .apple:hover,
+html[theme="dark"] .apple:active {
+  color: #f9f6ef;
+}
+.rebel:hover,
+.rebel:active {
+  color: var(--red);
+}
+.chess:hover,
+.chess:active {
+  color: #7fa650;
+}
+.discord:hover,
+.discord:active {
+  color: #7289da;
+}
+.facebook:hover,
+.facebook:active {
+  color: #4267b2;
+}
+.projects:hover,
+.projects:active {
+  color: var(--green);
+}
+html[theme="light"] .goodreads:hover,
+html[theme="light"] .goodreads:active {
+  color: #553b08;
+}
+html[theme="dark"] .goodreads:hover,
+html[theme="dark"] .goodreads:active {
+  color: #e9e5cd;
+}
+.imdb:hover,
+.imdb:active {
+  color: #f5c518;
+}
+html[theme="light"] .instagram:hover,
+html[theme="light"] .instagram:active {
+  color: #833ab4;
+}
+html[theme="dark"] .instagram:hover,
+html[theme="dark"] .instagram:active {
+  color: #fcaf45;
+}
+.kofi:hover,
+.kofi:active {
+  color: var(--green);
+}
+.lastfm:hover,
+.lastfm:active {
+  color: var(--red);
+}
+.linkedin:hover,
+.linkedin:active {
+  color: #2867b2;
+}
+.mail:hover,
+.mail:active {
+  color: var(--teal);
+}
+.spotify:hover,
+.spotify:active {
+  color: #1db954;
+}
+.telegram:hover,
+.telegram:active {
+  color: #0088cc;
+}
